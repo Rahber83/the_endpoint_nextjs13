@@ -43,14 +43,13 @@ body {
   .tab {
     @apply min-h-full dark:bg-dark-400 bg-light-800 text-light-5;
   }
-
-  .no-focus {
-    @apply focus-visible:ring-0 focus-visible:ring-transparent focus;
-  }
-  .active-theme {
-    filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
-      brightness(104%) contrast(106%) !important;
-  }
+}
+.no-focus {
+  @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+}
+.active-theme {
+  filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
+    brightness(104%) contrast(106%) !important;
 }
 .light-gradient {
   background: linear-gradient(
@@ -59,6 +58,7 @@ body {
     rgba(229, 237, 255, 0.25) 100%
   );
 }
+
 .primary-text-gradient {
   background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
   background-clip: text;
